@@ -1,4 +1,4 @@
-
+#laptop_business.py
 import random
 from laptop import laptop
 
@@ -22,3 +22,15 @@ class Laptop_Business(laptop):
             "Latencia de red": f"{random.randint(10, 100)} ms"
         }
         return conectividad
+    def __str__(self):
+        return (f"Marca: {self.marca}\n"
+            f"Procesador: {self.procesador}\n"
+            f"Memoria: {self.memoria} GB\n"
+            f"Almacenamiento: {self.almacenamiento} GB\n"
+            f"Duración de Batería: {self.duracion_bateria} horas\n"
+            f"Costo: {self.costo}\n"
+            f"Impuestos: {self.impuestos}\n")
+    
+    
+      
+

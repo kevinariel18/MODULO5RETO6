@@ -1,12 +1,12 @@
-
+#laptop.py
 
 import random
 
 
 class laptop:
-    def __init__(self,marca, prosesador, memoria, costo= 500, impuestos = 10):
+    def __init__(self,marca, procesador, memoria, costo= 500, impuestos = 10):
         self.marca = marca
-        self.prosesador = prosesador
+        self.procesador = procesador
         self.memoria = memoria
         self.costo = costo
         self.impuestos = impuestos
@@ -29,6 +29,16 @@ class laptop:
        
         }
         return  resultado
+    
+    def realizar_informe_uso(self):
+        resultado_informe ={
+            "Tipo" : "Generica",
+            "uso recomendado" : "tareas cotidianas",
+            "horas de uso" : 5,
+            "diagnostico actual": self.realizar_diagnostico_sistema()
+
+        }
+        return resultado_informe
 
 
     @staticmethod
